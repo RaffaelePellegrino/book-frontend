@@ -1,5 +1,5 @@
 export default function Footer() {
-    return(
+    return (
         <h1>sono Footer</h1>
     )
 }   
