@@ -6,12 +6,12 @@ import Home from './pages/Home';
 
 
 function App() {
-  return(
+  return (
     <BrowserRouter>
       <Routes>
         <Route Component={defaultLayout}>
-          <Route path='/' Component={Home}/>
-          <Route path='/about' Component={About}/>
+          <Route path='/' Component={Home} />
+          <Route path='/about' Component={About} />
         </Route>
       </Routes>
     </BrowserRouter>
