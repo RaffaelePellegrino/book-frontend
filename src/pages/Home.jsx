@@ -3,6 +3,8 @@ import CardComponent from "../components/CardComponent"
 
 export default function Home() {
     return (
-        <CardComponent />
+        <>
+            <h1>dasd</h1>
+        </>
     )
 }
