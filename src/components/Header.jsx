@@ -1,18 +1,25 @@
-import {Nav, NavLink} from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styles from './Header.module.css';
 
 function Header() {
     return (
-        <section>
-            <nav className="navbar bg-body-tertiary">
-                <div className="container-fluid">
-                    <NavLink className="navbar-brand">Navbar</NavLink>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+        <header className={styles.header}>
+            <nav className={styles.navbar}>
+                <div className="container-fluid d-flex align-items-center">
+                    <img className={styles.img} src="./download.jpg" alt="img mondadori" to="/" />
+                    <NavLink className={styles.title} to="/">MONDADORI</NavLink>
+                    <NavLink className={styles.navLink} to="/">Home</NavLink>
+                    <NavLink className={styles.navLink} to="/about">About</NavLink>
+                    <NavLink className={styles.navLink} to="/contact">Contact</NavLink>
                 </div>
+                <form className={styles.searchForm} role="search">
+                    <input className={styles.searchInput} type="search" placeholder="Search" aria-label="Search" />
+                    <button className={styles.searchButton} type="submit">Search</button>
+                </form>
             </nav>
-        </section>
+        </header>
+
     );
 }
 
