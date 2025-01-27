@@ -15,9 +15,6 @@ function App() {
             <Route index Component={Card} />
             {/* <Route index path='/:id' /> */}
           </Route>
-          <Route path='/' Component={Home} />
-          <Route path='/about' Component={About} />
-
         </Route>
       </Routes>
     </BrowserRouter>
