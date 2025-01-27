@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from './pages/About';
 import defaultLayout from './pages/DefaultLayout';
 import Home from './pages/Home';
-import Books from './pages/Books';
-
+import Card from "./components/Card";
 function App() {
   return(
     <BrowserRouter>
@@ -13,8 +12,8 @@ function App() {
           <Route Index Component={Home}/>
           <Route path='/about' Component={About}/>
           <Route path='/books'>
-            <Route index Component={Books} />
-            <Route index path='/:id' />
+            <Route index Component={Card} />
+            {/* <Route index path='/:id' /> */}
           </Route>
         </Route>
       </Routes>
