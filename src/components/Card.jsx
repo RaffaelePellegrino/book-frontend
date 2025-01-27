@@ -22,7 +22,7 @@ function Card() {
     }
     return (
         <div className="movies-list p-5">
-            <h1 >Lista dei Film</h1>
+            <h1 >Lista dei Libri</h1>
             <div className='d-flex gap-3 flex-wrap justify-content-center' >
                 {books.map((book) => (
                     <div key={book.id} style={{width: '18rem',backgroundColor: 'grey', borderRadius: '5px'}}>
