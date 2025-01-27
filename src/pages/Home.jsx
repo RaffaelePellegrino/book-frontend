@@ -1,5 +1,10 @@
+import CardComponent from "../components/CardComponent"
+
+
 export default function Home() {
-    return(
-        <h1>sono Home</h1>
+    return (
+        <>
+            <h1>home</h1>
+        </>
     )
 }

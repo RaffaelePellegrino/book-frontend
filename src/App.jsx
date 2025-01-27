@@ -5,7 +5,7 @@ import defaultLayout from './pages/DefaultLayout';
 import Home from './pages/Home';
 import Card from "./components/Card";
 function App() {
-  return(
+  return (
     <BrowserRouter>
       <Routes>
         <Route Component={defaultLayout}>
@@ -15,9 +15,13 @@ function App() {
             <Route index Component={Card} />
             {/* <Route index path='/:id' /> */}
           </Route>
+          <Route path='/' Component={Home} />
+          <Route path='/about' Component={About} />
+
         </Route>
       </Routes>
     </BrowserRouter>
   )
 }
 export default App;
+
