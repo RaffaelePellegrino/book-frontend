@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import FormComponent from '../components/FormComponent';
 function bookDetail() {
     const { id } = useParams();
     const [books, setBooks] = useState(null);
@@ -17,7 +18,7 @@ function bookDetail() {
                 setLoading(false);
             });
     }, [id]);
-    
+
     if (loading) {
         return <div className="text-center">Caricamento...</div>;
     }
@@ -29,7 +30,7 @@ function bookDetail() {
             <h1 className="text-center mb-4">{books.title}</h1>
             <div className="row ">
                 <div className="col-md-6 d-flex justify-content-center">
-                    <img  className="movie-image rounded-lg" src={`/${books.image}`}  style={{ width: 'auto', height: '500px' }} />
+                    <img className="movie-image rounded-lg" src={`/${books.image}`} style={{ width: 'auto', height: '500px' }} />
                 </div>
                 <div className="col-md-6">
                     <h3 className='mt-5'>Recensione Libro :</h3>
@@ -50,6 +51,8 @@ function bookDetail() {
                     </div>
                 </div>
             </div>
+            <FormComponent bookId={id} />
+
         </div>
     );
 }
