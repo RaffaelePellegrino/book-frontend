@@ -20,8 +20,8 @@ function FormComponent({ bookId }) {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault(); //evita il refresh della pagina
-        axios.post(`http://localhost:3000/${bookId}/reviews`, input)
+        // e.preventDefault(); //evita il refresh della pagina
+        axios.post(`http://localhost:3000/books/${bookId}/reviews`, input)
             .then((response) => {
                 setInput({ name: "", vote: "", text: "" });
             })
@@ -32,7 +32,8 @@ function FormComponent({ bookId }) {
 
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="py-5">
+            <div><h3 className="text-white text-center">aggiungi la tua recensione</h3></div>
             <div className="input-group mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">nome</span>
                 <input type="text"

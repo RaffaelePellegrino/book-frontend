@@ -10,12 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route Component={defaultLayout}>
-          <Route path='/' Component={Card}/>
-          <Route path='/:id' Component={bookDetail}/>
-          <Route path='/about' Component={About}/>
+          <Route path='/books' Component={Card} />
+          <Route path='/:id' Component={bookDetail} />
+          <Route path='/about' Component={About} />
           <Route path='/contact' Component={Contact}>
-            <Route index Component={Card} />
-            {/* <Route index path='/:id' /> */}
           </Route>
         </Route>
       </Routes>

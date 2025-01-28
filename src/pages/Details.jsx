@@ -8,7 +8,7 @@ function bookDetail() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(() => {
-        axios.get(`http://localhost:3000/${id}`)
+        axios.get(`http://localhost:3000/books/${id}`)
             .then(response => {
                 setBooks(response.data);
                 setLoading(false);
@@ -27,20 +27,20 @@ function bookDetail() {
     }
     return (
         <div className="container py-5">
-            <h1 className="text-center mb-4">{books.title}</h1>
+            <h1 className="text-center mb-4 text-white">{books.title}</h1>
             <div className="row ">
                 <div className="col-md-6 d-flex justify-content-center">
                     <img className="movie-image rounded-lg" src={`/${books.image}`} style={{ width: 'auto', height: '500px' }} />
                 </div>
                 <div className="col-md-6">
-                    <h3 className='mt-5'>Recensione Libro :</h3>
-                    <p>{books.abstract}</p>
-                    <h3 className="mt-4 mb-4">Recensioni Utenti :</h3>
+                    <h3 className='mt-5 text-white'>Recensione Libro :</h3>
+                    <p className='text-white'>{books.abstract}</p>
+                    <h3 className="mt-4 mb-4 text-white">Recensioni Utenti :</h3>
                     <div className="list-group">
                         {books.reviews.length > 0 ? (
-                            books.reviews.map((review) => (
+                            books.reviews.map((review,) => (
                                 <div key={review.id} className="list-group-item bg-light">
-                                    <strong>{review.name}</strong>: {review.text}
+                                    <strong class >{review.name}</strong>: {review.text}
                                     <h6><strong>Data di Pubblicazione : </strong>{review.created_at}</h6>
                                     <h6><strong>Voto : </strong>{review.vote}</h6>
                                 </div>
