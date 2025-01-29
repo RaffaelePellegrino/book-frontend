@@ -1,0 +1,52 @@
+.footer {
+    background-color: #1B1B19;
+    color: white;
+    height: 180px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists {
+    display: flex;
+}
+
+.about,
+.support, .social {
+    padding-right: 200px;
+    padding-top: 15px;
+}
+
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.hr {
+    width: 90%;
+    padding-left: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.504);
+    margin: 0 auto;
+}
