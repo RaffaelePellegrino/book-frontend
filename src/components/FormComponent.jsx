@@ -32,7 +32,7 @@ function FormComponent({ bookId }) {
 
     return (
 
-        <form onSubmit={handleSubmit} className="py-5">
+        <form onSubmit={handleSubmit} className="py-5 mb-5">
             <div><h3 className="text-white text-center">aggiungi la tua recensione</h3></div>
             <div className="input-group mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">nome</span>
