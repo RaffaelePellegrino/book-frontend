@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route Component={defaultLayout}>
-          <Route path='/books' Component={Card} />
+          <Route path='/' Component={Card} />
           <Route path='/:id' Component={bookDetail} />
           <Route path='/about' Component={About} />
           <Route path='/contact' Component={Contact}>
