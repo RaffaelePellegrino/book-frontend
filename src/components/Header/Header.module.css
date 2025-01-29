@@ -1,14 +1,17 @@
-
 .header {
     height: 100%;
     background-color: #1B1B19;
+    padding: 10px 20px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-between;
+}
+
+.img {
+    width: 80px;
 }
 
 .title {
@@ -16,19 +19,17 @@
     color: red;
     font-weight: bold;
     font-size: 1.9em;
-    margin-top: 5px;
 }
 
-.img {
-    width: 80px;
+.navLinks {
+    display: flex;
+    gap: 20px;
 }
 
 .navLink {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    padding-left: 30px;
-    padding-top: 10px;
 }
 
 .navLink:hover {
@@ -36,7 +37,6 @@
     font-weight: bold;
 }
 
-/* Stile per il form */
 .searchForm {
     display: flex;
     align-items: center;
@@ -48,12 +48,6 @@
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.searchInput:focus {
-    outline: none;
-    border-color: #28a745;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
 .searchButton {
@@ -69,4 +63,50 @@
 
 .searchButton:hover {
     background-color: #218838;
-} 
+}
+
+.hamburger {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1B19;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    z-index: 100;
+}
+
+.mobileNavLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.searchFormMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 992px) {
+    .navLinks {
+        display: none;
+    }
+
+    .searchForm {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
