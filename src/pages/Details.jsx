@@ -2,6 +2,9 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import FormComponent from '../components/FormComponent';
+import 'font-awesome/css/font-awesome.min.css';
+
+
 function bookDetail() {
     const { id } = useParams();
     const [books, setBooks] = useState(null);
@@ -25,6 +28,20 @@ function bookDetail() {
     if (error) {
         return <div className="text-center text-danger">{error}</div>;
     }
+
+    const renderStars = (vote) => {
+        const fullStars = Math.floor(vote);
+        const emptyStars = 5 - fullStars;
+        let stars = [];
+        for (let i = 0; i < fullStars; i++) {
+            stars.push(<i key={`full-${i}`} className="fa fa-star text-warning"></i>);
+        }
+        for (let i = 0; i < emptyStars; i++) {
+            stars.push(<i key={`empty-${i}`} className="fa fa-star-o text-muted"></i>);
+        }
+        return stars;
+    };
+
     return (
         <div className="container py-5">
             <h1 className="text-center mb-4 text-white">{books.title}</h1>
@@ -42,7 +59,7 @@ function bookDetail() {
                                 <div key={review.id} className="list-group-item bg-light">
                                     <strong class >{review.name}</strong>: {review.text}
                                     <h6><strong>Data di Pubblicazione : </strong>{review.created_at}</h6>
-                                    <h6><strong>Voto : </strong>{review.vote}</h6>
+                                    <h6><strong>Voto : </strong>{renderStars(review.vote)}</h6>
                                 </div>
                             ))
                         ) : (
