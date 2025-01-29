@@ -6,7 +6,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 30PX;
+    margin-top: 30px;
+    z-index: 1000;
+
 }
 
 
@@ -21,7 +23,8 @@
 }
 
 .about,
-.support, .social {
+.support,
+.social {
     padding-right: 200px;
     padding-top: 15px;
 }
