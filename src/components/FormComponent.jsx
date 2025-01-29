@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-
+import "./FormComponent.css"
 
 function FormComponent({ bookId }) {
 
@@ -32,7 +32,7 @@ function FormComponent({ bookId }) {
 
     return (
 
-        <form onSubmit={handleSubmit} className="py-5 mb-5">
+        <form onSubmit={handleSubmit} className="marginBot ">
             <div><h3 className="text-white text-center">aggiungi la tua recensione</h3></div>
             <div className="input-group mb-3">
                 <span className="input-group-text" id="inputGroup-sizing-default">nome</span>
@@ -68,7 +68,7 @@ function FormComponent({ bookId }) {
                     onChange={handleChange}
                 />
             </div>
-            <button type="submit" className="btn btn-primary">inserisci</button>
+            <button type="submit" className="btn btn-custom ">inserisci</button>
         </form>
     )
 
