@@ -31,13 +31,13 @@
 
 .navLinks {
     display: flex;
-    gap: 20px;
 }
 
 .navLink {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
+    padding: 15px;
 }
 
 .navLink:hover {

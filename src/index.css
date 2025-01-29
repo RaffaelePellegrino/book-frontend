@@ -11,7 +11,6 @@ body {
 .card-custom {
     filter: sepia(30%) contrast(90%);
     border: 2px solid #8B4513;
-    /* Marrone legno antico */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
@@ -20,7 +19,6 @@ body {
     background-position: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 200px;
 }
 
 .btn-custom {
