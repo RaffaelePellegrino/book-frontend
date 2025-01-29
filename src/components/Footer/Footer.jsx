@@ -5,8 +5,8 @@ export default function Footer() {
         <footer className={styles.footer}>
             <section className={styles.list}>
                 <div className={styles.lists}>
-                    <div className={styles.about}>
-                        <h2 className="text-lg font-semibold mb-2">Company</h2>
+                    <div className={styles.Company}>
+                        <h2 className="text-lg font-semibold mb-2">Company </h2>
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Careers</a></li>
@@ -14,7 +14,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className={styles.support}>
-                        <h2 className="mb-2">Support</h2>
+                        <h2 className="mb-2">Support </h2>
                         <ul>
                             <li><a href="#">Help Center</a></li>
                             <li><a href="#">Contact Us</a></li>
