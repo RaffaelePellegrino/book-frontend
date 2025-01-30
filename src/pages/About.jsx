@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div className="container">
             <div className="text-center mb-5">
-                <h1 className="display-4 font-weight-bold">Chi Siamo</h1>
+                <h1 className="display-4 font-weight-bold white">Chi Siamo</h1>
                 <p className="lead text-muted mb-4">Siamo un team appassionato che si dedica a creare un'esperienza unica per gli amanti dei libri. La nostra missione è aiutare i lettori a scoprire e condividere le loro passioni letterarie.</p>
                 <p className="text-muted">La nostra piattaforma è progettata per essere semplice, accessibile e utile per tutti gli amanti dei libri.</p>
             </div>

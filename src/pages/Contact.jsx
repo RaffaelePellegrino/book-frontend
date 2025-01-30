@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <div className="container mt-4">
-            <h2 className="text-center mb-4">Il nostro team</h2>
+            <h2 className="text-center mb-4 white">Il nostro team</h2>
             <div className="row">
                 {/* Card 1 */}
                 <div className="col-lg-4 col-md-6 mb-4">
