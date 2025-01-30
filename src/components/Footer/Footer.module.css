@@ -57,9 +57,10 @@
 }
 
 @media (max-width: 992px) {
-    .footer{
+    .footer {
         height: 120px;
     }
+
     .lists {
         display: flex;
         flex-wrap: wrap;
@@ -76,14 +77,14 @@
     .support h2,
     .social h2 {
         font-size: 1.5em;
-        text-align: center;        
+        text-align: center;
     }
 
     .Company,
     .support {
         flex: 1 1 45%;
         padding-right: 0;
-    
+
     }
 
     .social {
