@@ -44,12 +44,12 @@ p {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
-    background-image: url('/sfondo\ card.png');
+    background-image: url('/sfondo card.png');
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .card-custom:hover {
